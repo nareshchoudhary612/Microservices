@@ -10,8 +10,8 @@ public class ExchangeValue {
 	
 	@Id
 	private Long id;
-	private String c_from;
-	private String c_to;
+	private String cfrom;
+	private String cto;
 	private BigDecimal conversionMultiple;
 	private int port;
 	
@@ -27,11 +27,11 @@ public class ExchangeValue {
 		this.port = port;
 	}
 
-	public ExchangeValue(Long id, String c_from, String c_to, BigDecimal conversionMultiple) {
+	public ExchangeValue(Long id, String cfrom, String cto, BigDecimal conversionMultiple) {
 		super();
 		this.id = id;
-		this.c_from = c_from;
-		this.c_to = c_to;
+		this.cfrom = cfrom;
+		this.cto = cto;
 		this.conversionMultiple = conversionMultiple;
 	}
 	public Long getId() {
@@ -40,17 +40,17 @@ public class ExchangeValue {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getC_from() {
-		return c_from;
+	public String getcfrom() {
+		return cfrom;
 	}
-	public void setC_from(String c_from) {
-		this.c_from = c_from;
+	public void setcfrom(String cfrom) {
+		this.cfrom = cfrom;
 	}
-	public String getC_to() {
-		return c_to;
+	public String getcto() {
+		return cto;
 	}
-	public void setC_to(String c_to) {
-		this.c_to = c_to;
+	public void setcto(String cto) {
+		this.cto = cto;
 	}
 	public BigDecimal getConversionMultiple() {
 		return conversionMultiple;
